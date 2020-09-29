@@ -151,6 +151,7 @@ app.post('/instance', passport.authenticate(['basic'],{session: true}), function
 				  }
 				};
 				contOptions.Labels["traefik.http.routers." + appname + ".rule" ] = "HOST(" + hostname + ")"
+				contOptions.Labels["traefik.http.services." + appname + ".loadbalancer.server.port"] = 1880
 				return docker.createContainer(contOptions)
 				.then(container => {
 			  	console.log("created");
