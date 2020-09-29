@@ -150,7 +150,7 @@ app.post('/instance', passport.authenticate(['basic'],{session: true}), function
 				    NetworkMode: "internal"
 				  }
 				};
-				contOptions["traefik.http.routers." + appname + ".rule" ] = "HOST(" + hostname + ")"
+				contOptions.Labels["traefik.http.routers." + appname + ".rule" ] = "HOST(" + hostname + ")"
 				return docker.createContainer(contOptions)
 				.then(container => {
 			  	console.log("created");
