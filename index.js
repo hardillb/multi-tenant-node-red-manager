@@ -121,7 +121,7 @@ app.post('/instance', passport.authenticate(['basic'],{session: true}), function
 		} else {
 			var u = new Users({
 				appname: req.body.appname,
-				username: "admin",
+				username: req.body.userid || "admin",
 				email: req.body.email,
 				permissions: "*"
 			})
@@ -131,7 +131,7 @@ app.post('/instance', passport.authenticate(['basic'],{session: true}), function
 				return u.save()
 			})
 			.then(() => {
-				
+
 				var contOptions = {
 					Image: "custom-node-red",
 					name: appname,

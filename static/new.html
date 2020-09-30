@@ -21,6 +21,8 @@
     <input class="form" id="appName" type="text">
     <label class="form" for="email">Owner Email address:</label>
     <input class="form" id="email" type="email">
+    <label class="form" for="userid">Admin UserID:</label>
+    <input class="form" id="userid" type="text">
     <label class="form" for="password">Admin Password:</label>
     <input class="form" id="password" type="password">
     <label class="form" for="confirm-password">Confirm Admin Password:</label>
@@ -41,10 +43,10 @@
 			document.getElementById("output").innerHTML = "Submitted request";
 		}
 
-
 		var payload = {
 			appname: document.getElementById("appName").value,
 			email:document.getElementById("email").value,
+			userid:document.getElementById("userid").value,
 			password:document.getElementById("password").value
 		}
 
