@@ -5,6 +5,12 @@ A small web app to stand up new Node-RED instances using Docker.
 This is meant to purely be a PoC, a real production deployment would require a lot
 more features.
 
+## Download
+
+```
+$ git clone --recurse-submodules git@github.com:hardillb/multi-tenant-node-red-manager.git
+```
+
 ## Configure
 
 Edit the `settings.js` file to set the root domain for new instances and with
@@ -21,7 +27,8 @@ e.g.
 		"port": 2375
 	},
 	admin: "admin",
-	password: "password"
+	password: "password",
+	logHistory: 250
 }
 ```
 
@@ -33,9 +40,11 @@ or
 		"socketPath": "/var/run/docker.sock"
 	},
 	admin: "admin",
-	password: "password"
+	password: "password",
+	logHistory: 250
 }
 ```
 
  - `admin` is the admin username
  - `password` is the admin password
+ - 'logHistory' is the number of lines of pervious logs to show
