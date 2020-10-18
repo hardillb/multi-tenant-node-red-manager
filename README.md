@@ -47,4 +47,4 @@ or
 
  - `admin` is the admin username
  - `password` is the admin password
- - 'logHistory' is the number of lines of pervious logs to show
+ - `logHistory` is the number of lines of pervious logs to show
