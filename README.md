@@ -21,7 +21,7 @@ e.g.
 
 ```{
 	"mongodb": "mongodb://docker-pi.local/nodered",
-	"rootDomain": "docker-pi.local",
+	"rootDomain": "example.com",
 	"dockerodeSettings": {
 		"host": "http://127.0.0.1",
 		"port": 2375
@@ -35,7 +35,7 @@ e.g.
 or
 ```{
 	"mongodb": "mongodb://docker-pi.local/nodered",
-	"rootDomain": "docker-pi.local",
+	"rootDomain": "example.com",
 	"dockerodeSettings": {
 		"socketPath": "/var/run/docker.sock"
 	},
