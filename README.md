@@ -8,7 +8,7 @@ more features.
 ## Download
 
 ```
-$ git clone --recurse-submodules git@github.com:hardillb/multi-tenant-node-red-manager.git
+$ git clone --recurse-submodules https://github.com/hardillb/multi-tenant-node-red-manager.git
 ```
 
 ## Configure
