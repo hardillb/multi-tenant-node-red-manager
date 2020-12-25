@@ -1,5 +1,5 @@
 {
-  "name": "multi-tenant-node-red-controller",
+  "name": "multi-tenant-node-red-manager",
   "version": "0.0.1",
   "description": "A web frontend to control deploying Node-RED containers",
   "main": "index.js",
@@ -9,6 +9,11 @@
   "keywords": [
     "node-red"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hardillb/multi-tenant-node-red-manager"
+  },
+  "bugs": "https://github.com/hardillb/multi-tenant-node-red-manager/issues",
   "author": "hardillb@gmail.com",
   "license": "Apache-2.0",
   "dependencies": {
