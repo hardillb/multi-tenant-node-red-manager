@@ -161,7 +161,7 @@ app.post('/instance', passport.authenticate(['basic'],{session: true}), function
 			  	return container.start()
 				})
 				.then(() => {
-					res.status(201).send({started: true, url: "http://" + hostname});
+					res.status(201).send({started: true, url: "//" + hostname});
 				})
 				.catch(err => {
 					logger.debug(err);

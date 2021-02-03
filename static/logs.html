@@ -58,7 +58,11 @@ function connect() {
 		disconnect();
 	}
 	var selected = document.getElementById("container");
-	ws = new WebSocket(`ws://${location.host}` + "/" + selected.options[selected.selectedIndex].value);
+	if (location.scheme === 'https') {
+		ws = new WebSocket(`wss://${location.host}` + "/" + selected.options[selected.selectedIndex].value);
+	} else {
+		ws = new WebSocket(`ws://${location.host}` + "/" + selected.options[selected.selectedIndex].value);
+	}
 	var log = document.getElementById('log');
     ws.onmessage =  function(event) {
         var line = event.data;

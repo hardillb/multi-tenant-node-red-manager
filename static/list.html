@@ -52,7 +52,7 @@ function populate() {
 			var instanceName = containers[container].Names[0].substring(1);
 
 			var name = document.createElement('td');
-            name.innerHTML = "<b><a href=\"http://"+ instanceName + "." + response.domain +"\">"+ instanceName+"</a></b>";
+            name.innerHTML = "<b><a href=\"//"+ instanceName + "." + response.domain +"\">"+ instanceName+"</a></b>";
 
 			row.appendChild(name);
 			var state = document.createElement('td');
