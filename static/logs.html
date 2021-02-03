@@ -58,7 +58,7 @@ function connect() {
 		disconnect();
 	}
 	var selected = document.getElementById("container");
-	if (location.scheme === 'https') {
+	if (location.location === 'https:') {
 		ws = new WebSocket(`wss://${location.host}` + "/" + selected.options[selected.selectedIndex].value);
 	} else {
 		ws = new WebSocket(`ws://${location.host}` + "/" + selected.options[selected.selectedIndex].value);
