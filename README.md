@@ -5,6 +5,10 @@ A small web app to stand up new Node-RED instances using Docker.
 This is meant to purely be a PoC, a real production deployment would require a lot
 more features.
 
+## Deprecated 
+
+This project is now deprecated, there will be no more updates and no support for anybody triyng to use it. If you are looking for a Multi Tenant Node-RED solution I suggest you look at [FlowForge](https://flowforge.com).
+
 ## Download
 
 ```
